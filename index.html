@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!--Меню (сверху, не фиксированное инверсивное) адаптивное-->
+    <div class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+             <!--кнопка открытия меню на моб устройствах-->
+            <span class="sr-only">Открыть навигацию</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand">LOGO_Company</a>
+        </div>
+        <!--содержимое меню-->
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="menu-style nav navbar-nav">
+            <li><a href="#">Item_1</a></li>
+            <!--реализация выпадающего меню-->
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Item_2 <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">sub_item_1</a></li>
+                <li><a href="#">sub_item_2</a></li>
+                <li><a href="#">sub_item_3</a></li>
+                <li class="divider"></li><!--разделить внутри меню-->
+                <li><a href="#">sub_item_4</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Item_3</a></li>
+            <li><a href="#">Item_4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <h1>Title Page</h1>
+        <!--примеры кнопок-->
+        <p>
+          <a href="#" class="btn btn-default"><i class="glyphicon glyphicon-refresh"></i></a>
+          <a href="#" class="btn btn-primary">button2</a>
+          <a href="#" class="btn btn-success">button3</a>
+          <a href="#" class="btn btn-warning">button4</a>
+          <a href="#" class="btn btn-info">button5</a>
+          <a href="#" class="btn btn-danger">button6</a>
+          <a href="#" class="btn btn-link">button6</a>
+        </p>
+        <!--кнопки на всю страницу (активные и не активные)-->
+        <p>
+          <a href="#" class="btn btn-default btn-lg btn-block active">button!</a>
+          <a href="#" class="btn btn-default btn-lg btn-block disabled">button!</a>
+        </p>
+      </div>
+      <!--группы кнопок-->
+      <div class="container">
+        <div class="row">
+          <div class="btn-toolbar">
+            <div class="btn-group btn-group-lg">
+              <a href="#" class="btn btn-default"><i class="glyphicon glyphicon-refresh"></i></a>
+              <a href="#" class="btn btn-default"><i class="glyphicon glyphicon-star-empty"></i></a>
+              <a href="#" class="btn btn-default"><i class="glyphicon glyphicon-camera"></i></a>
+            </div>
+            <div class="btn-group btn-group-lg">
+              <a href="#" class="btn btn-default"><i class="glyphicon glyphicon-refresh"></i></a>
+              <a href="#" class="btn btn-default"><i class="glyphicon glyphicon-star-empty"></i></a>
+              <a href="#" class="btn btn-default"><i class="glyphicon glyphicon-camera"></i></a>
+            </div>
+            <div class="btn-group btn-group-lg">
+              <a href="#" class="btn btn-default"><i class="glyphicon glyphicon-refresh"></i></a>
+              <a href="#" class="btn btn-default"><i class="glyphicon glyphicon-star-empty"></i></a>
+              <a href="#" class="btn btn-default"><i class="glyphicon glyphicon-camera"></i></a>
+            </div>
+          </div>
+          <div class="btn-toolbar">
+            <div class="btn-group btn-group-sm">
+              <a href="#" class="btn btn-default"><i class="glyphicon glyphicon-refresh"></i></a>
+              <a href="#" class="btn btn-default"><i class="glyphicon glyphicon-star-empty"></i></a>
+              <a href="#" class="btn btn-default"><i class="glyphicon glyphicon-camera"></i></a>
+            </div>
+            <div class="btn-group btn-group-sm">
+              <a href="#" class="btn btn-default"><i class="glyphicon glyphicon-refresh"></i></a>
+              <a href="#" class="btn btn-default"><i class="glyphicon glyphicon-star-empty"></i></a>
+              <a href="#" class="btn btn-default"><i class="glyphicon glyphicon-camera"></i></a>
+            </div>
+            <div class="btn-group btn-group-sm">
+              <a href="#" class="btn btn-default"><i class="glyphicon glyphicon-refresh"></i></a>
+              <a href="#" class="btn btn-default"><i class="glyphicon glyphicon-star-empty"></i></a>
+              <a href="#" class="btn btn-default"><i class="glyphicon glyphicon-camera"></i></a>
+            </div>
+          </div>
+          <div class="btn-toolbar">
+            <div class="btn-group btn-group-justified">
+              <a href="#" class="btn btn-default"><i class="glyphicon glyphicon-refresh"></i></a>
+              <a href="#" class="btn btn-default"><i class="glyphicon glyphicon-star-empty"></i></a>
+              <a href="#" class="btn btn-default"><i class="glyphicon glyphicon-camera"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--сеточная разметка-->
+      <div class="row">
+        <div class="col-lg-4 fill">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quod molestiae id cum maiores. Ipsam nemo, natus harum nobis cum deleniti velit in. Deleniti soluta a voluptatum nesciunt, corrupti provident!</div>
+        <div class="col-lg-4 fill">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate sed recusandae, aut amet, nobis optio eligendi mollitia sit voluptatum distinctio minus doloribus dolor consequuntur nesciunt commodi quam! Ut repellendus, quas.</div>
+        <div class="col-lg-4 fill">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur vero obcaecati sit nostrum dicta a voluptas ab repellat error molestias culpa qui doloribus animi, nam quaerat maxime accusamus deserunt suscipit.</div>
+      </div>
+      <!--Реализация слайдера-->
+      <div class="row">
+        <div class="col-md-offset-1 col-md-10">
+          <div id="carousel" class="carousel slide">
+            <!--Индикаторы слайдов-->
+            <ol class="carousel carousel-indicators">
+              <li class="active" data-target="#carousel" data-slide-to="0"></li>
+              <li data-target="#carousel" data-slide-to="1"></li>
+              <li data-target="#carousel" data-slide-to="2"></li>
+            </ol>
+            <!--Слайды-->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="img/img1.jpg" alt="1" height="50%">
+                <div class="carousel-caption">
+                   <h3>Первый слайд</h3>
+                   <p>Описание первого слайда</p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="img/img2.jpg" alt="2">
+                <div class="carousel-caption">
+                   <h3>Второй слайд</h3>
+                   <p>Описание Второго слайда</p>
+                </div>
+              </div>
+              <div class="item">
+                <img src="img/img3.jpg" alt="3">
+                <div class="carousel-caption">
+                   <h3>Третий слайд</h3>
+                   <p>Описание третьего слайда</p>
+                </div>
+              </div>
+            </div>
+            <!--Кнопки переключения слайдов-->
+              <a href="#carousel" class="left carousel-control" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a href="#carousel" class="right carousel-control" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>
